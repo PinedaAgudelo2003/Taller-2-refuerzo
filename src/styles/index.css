@@ -1,0 +1,195 @@
+:root {
+  /* COLORES PRINCIPALES (E-COMMERCE) */
+  --text: #1f2937;
+  --text-h: #111827;
+  --bg: #91c5f8;
+  --card-bg: #f1a3a3;
+  --border: #b8cefa;
+
+  /* COLORES DE ACCIÓN (IMPORTANTE PARA VENTAS) */
+  --accent: #2563eb; /* azul confiable */
+  --accent-2: #22c55e; /* verde compra */
+  --accent-hover: #1d4ed8;
+
+  --price: #16a34a;
+  --danger: #ef4444;
+
+  --shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.05);
+
+  --radius: 12px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/150% var(--sans);
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* DARK MODE (tipo apps modernas) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #7daffa;
+    --text-h: #f7afaf;
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --border: #334155;
+
+    --accent: #3b82f6;
+    --accent-2: #22c55e;
+    --accent-hover: #2563eb;
+
+    --price: #4ade80;
+  }
+}
+
+/* BASE */
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+#root {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* TITULOS */
+h1, h2 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* TARJETAS DE PRODUCTO */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* IMAGEN PRODUCTO */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* PRECIO */
+.price {
+  color: var(--price);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* BOTÓN COMPRAR */
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+  transform: scale(1.05);
+}
+
+/* BOTÓN SECUNDARIO */
+.button-secondary {
+  background: var(--accent-2);
+}
+
+.button-secondary:hover {
+  filter: brightness(0.9);
+}
+
+/* GRID PRODUCTOS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* BADGE (OFERTA / NUEVO) */
+.badge {
+  display: inline-block;
+  background: var(--danger);
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* NAVBAR SIMPLE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* CARRITO */
+.cart {
+  position: relative;
+}
+
+.cart span {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: var(--danger);
+  color: white;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+/* TEXTO */
+p {
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+/* CODE (por si lo usas aún) */
+code {
+  font-family: var(--mono);
+  background: var(--border);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
