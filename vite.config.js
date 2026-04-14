@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/taller2/'
+  base: '/Taller-2-refuerzo/'
 })
