@@ -33,20 +33,20 @@ TALLER2-MAIN/
 │   │   ├── react.svg
 │   │   └── vite.svg
 │   │
-│   ├── components/          # Componentes reutilizables
+│   ├── components/          # Reusable components
 │   │   ├── card.jsx
-│   │   ├── formulario.jsx
+│   │   ├── form.jsx
 │   │   └── navbar.jsx
 │   │
-│   ├── layouts/             # Estructuras base de la app
+│   ├── layouts/             # App layout structures
 │   │   └── mainlayout.jsx
 │   │
-│   ├── pages/               # Vistas principales
-│   │   ├── accesorios.jsx
-│   │   ├── articulos.jsx
-│   │   └── inicio.jsx
+│   ├── pages/               # Main views
+│   │   ├── accessories.jsx
+│   │   ├── products.jsx
+│   │   └── home.jsx
 │   │
-│   ├── styles/              # Estilos globales
+│   ├── styles/              # Global styles
 │   │   ├── App.css
 │   │   └── global.css
 │   │   └── index.css
@@ -75,13 +75,13 @@ TALLER2-MAIN/
 
 ---
 
-## 🕹️ Funcionalidades actuales
+## 🕹️ Current features
 
-* 🏠 Página de inicio
-* 🛒 Sección de accesorios
-* 📦 Sección de artículos
-* 📋 Formularios interactivos
-* 🔝 Barra de navegación reutilizable
+* 🏠 Home page
+* 🛒 Accessories section
+* 📦 Products section
+* 📋 Interactive forms
+* 🔝 Reusable navigation bar
 
 ---
 

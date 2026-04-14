@@ -1,8 +1,8 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Inicio from "./pages/inicio";
-import Articulos from "./pages/articulos";
-import Accesorios from "./pages/accesorios";
+import Home from "./pages/home";
+import Products from "./pages/products";
+import Accessories from "./pages/accessories";
 
 function App() {
   return (
@@ -10,13 +10,13 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/articulos" element={<Articulos />} />
-        <Route path="/accesorios" element={<Accesorios />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/accessories" element={<Accessories />} />
       </Routes>
 
       <footer className="text-center mt-5">
-        © 2026 Tienda-carrito
+        © 2026 Shop Cart
       </footer>
     </HashRouter>
   );

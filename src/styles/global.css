@@ -63,20 +63,20 @@ h2, h4 {
   background: white;
 }
 
-/* Hover efecto */
+/* Hover effect */
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Imagen */
+/* Image */
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-/* Texto dentro de card */
+/* Card text */
 .card-body {
   text-align: center;
 }
@@ -87,7 +87,7 @@ h2, h4 {
   margin-bottom: 10px;
 }
 
-/* Precio */
+/* Price */
 .card-body p {
   font-size: 16px;
   font-weight: bold;
@@ -95,7 +95,7 @@ h2, h4 {
 }
 
 /* ========================= */
-/* 🔘 BOTONES */
+/* 🔘 BUTTONS */
 /* ========================= */
 
 .btn {
@@ -108,7 +108,7 @@ h2, h4 {
 }
 
 /* ========================= */
-/* 📝 FORMULARIO */
+/* 📝 FORM */
 /* ========================= */
 
 .card h5 {

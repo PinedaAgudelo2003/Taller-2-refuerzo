@@ -11,7 +11,7 @@ function MainLayout() {
       </div>
 
       <footer className="text-center mt-5">
-        © 2026 Tienda-carrito
+        © 2026 Shop Cart
       </footer>
     </>
   );

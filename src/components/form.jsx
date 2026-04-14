@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-function Formulario({ onAgregar }) {
+function Form({ onAdd }) {
   const [form, setForm] = useState({
-    nombre: "",
-    precio: "",
-    existencias: ""
+    name: "",
+    price: "",
+    stock: ""
   });
 
   const handleChange = (e) => {
@@ -16,48 +16,48 @@ function Formulario({ onAgregar }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAgregar(form);
+    onAdd(form);
 
     setForm({
-      nombre: "",
-      precio: "",
-      existencias: ""
+      name: "",
+      price: "",
+      stock: ""
     });
   };
 
   return (
     <div className="card p-3">
-      <h5 className="bg-primary text-white p-2">Agregar Producto</h5>
+      <h5 className="bg-primary text-white p-2">Add Product</h5>
 
       <input
-        name="nombre"
-        value={form.nombre}
-        placeholder="Nombre"
+        name="name"
+        value={form.name}
+        placeholder="Name"
         className="form-control my-2"
         onChange={handleChange}
       />
 
       <input
-        name="precio"
-        value={form.precio}
-        placeholder="Precio"
+        name="price"
+        value={form.price}
+        placeholder="Price"
         className="form-control my-2"
         onChange={handleChange}
       />
 
       <input
-        name="existencias"
-        value={form.existencias}
-        placeholder="Existencias"
+        name="stock"
+        value={form.stock}
+        placeholder="Stock"
         className="form-control my-2"
         onChange={handleChange}
       />
 
       <button className="btn btn-success" onClick={handleSubmit}>
-        Agregar
+        Add
       </button>
     </div>
   );
 }
 
-export default Formulario;
+export default Form;

@@ -1,26 +1,25 @@
-function Card({ producto, nombre, imagen, onEliminar }) {
+function Card({ product, name, image, onDelete }) {
   return (
     <div className="card" style={{ width: "18rem" }}>
-      
       <img
-        src={producto?.imagen || imagen}
+        src={product?.image || image}
         className="card-img-top"
         alt=""
       />
 
       <div className="card-body">
-        <h6>{producto?.nombre || nombre}</h6>
+        <h6>{product?.name || name}</h6>
 
-        {producto?.precio && (
-          <p className="text-success">${producto.precio}</p>
+        {product?.price && (
+          <p className="text-success">${product.price}</p>
         )}
 
-        {producto && onEliminar && (
+        {product && onDelete && (
           <button
             className="btn btn-sm btn-danger"
-            onClick={() => onEliminar(producto.id)}
+            onClick={() => onDelete(product.id)}
           >
-            Eliminar
+            Delete
           </button>
         )}
       </div>
