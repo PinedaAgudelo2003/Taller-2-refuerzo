@@ -6,11 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:gh": "vite build --base=/Taller-2-refuerzo/",
+    "build": "vite build --outDir docs",
+    "build:gh": "vite build --outDir docs --base=/Taller-2-refuerzo/",
     "preview": "vite preview",
-    "predeploy": "npm run build:gh",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "npm run build",
     "lint": "eslint ."
   },
   "dependencies": {
